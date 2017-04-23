@@ -1,13 +1,11 @@
-div {
-  height: 100%;
-  width: 100%;
-}
-canvas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  background-color: black
 }
 @keyframes fadein{
   from {opacity: 0;}
   to{opacity:1;}
+}
+
+label {
+  color: white;
 }

@@ -6,36 +6,26 @@ var circle = document.getElementById('circle');
 // Button calculation
 function calculate() {
   var radius = radInput.value;
-area = (radius * radius)*3.14159;
-console.log(area);
+  area = (radius * radius)*3.14159;
+  console.log(area);
 
 var theAreaIs = document.getElementById('output');
 
-theAreaIs.innerText = "The area is "+area;
-
+theAreaIs.innerText = "The area of this circle is "+area;
 drawCircle(radius);
-
-
-
-
 }
+
 function drawCircle (radius){
   var radius = radInput.value;
   var circle = document.getElementById('circle');
   var diameterString = (radInput.value * 2) + "px";
   circle.style.width = diameterString;
   circle.style.height = diameterString;
-  circle.style.background = "red";
-
-
-        circle.style.mozBorderRadius = radius + "px";
-        circle.style.webkitBorderRadius = radius + "px";
-        circle.style.borderRadius = radius + "px";
-
-circle.style.animation = "fadein 2s";
-
-
-
+  circle.style.borderRadius = radius + "px";
+  circle.style.background = "white";
+  circle.style.mozBorderRadius = radius + "px";
+  circle.style.webkitBorderRadius = radius + "px";
+  circle.style.animation = "fadein 2s";
 }
 
 
