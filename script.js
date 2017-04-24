@@ -1,8 +1,6 @@
 var radInput = document.getElementById('radiusInput');
 var radius = radInput.value;
 var area;
-var frame = document.getElementById('frame');
-frame.className = "frame";
 
 // Area calculation
 function calculate() {
@@ -20,7 +18,8 @@ drawCircle(radius);
 //Draw the circle
 function drawCircle (radius){
   var radius = radInput.value;
-  var circle = document.getElementById('circle');
+  var circleDiv = document.createElement('div');
+  var circle = circleDiv;
   var diameterString = (radInput.value * 2) + "px";
   circle.style.width = diameterString;
   circle.style.height = diameterString;
