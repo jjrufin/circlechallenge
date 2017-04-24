@@ -1,0 +1,172 @@
+/*Index*/
+a.class1 {
+  color: black;
+  text-decoration: none;
+}
+
+a.class1:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a.class1:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a.class1:active {
+  text-decoration: none;
+  color: red;
+}
+
+body {
+  background-image: url("../images/planksofwood.jpg");
+  min-width: 100%;
+  min-height: 100%;
+    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+
+h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 50px;
+  font-size: 100px;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+p {
+  color: black;
+  text-align: center;
+}
+
+/*About Me*/
+#about {
+  text-shadow: 1px 1px 1px white;
+}
+
+.about {
+  position: relative;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+
+/*NavBar*/
+.dropbtn {
+  color: black;
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: ;}
+
+/*Portfolio Grid*/
+  div.column {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+  }
+
+.portimages {
+   height: 100%;
+   width: 100%;
+}
+
+.projectheaders {
+  text-align: center;
+}
+
+  .column {
+    width: 230px;
+    height: 230px;
+    margin: auto;
+  }
+
+/*Blog*/
+
+h4 {
+  text-align: center;
+  font-size: 100px;
+}
+
+#sunset {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 50%;
+}
+
+.commenter {
+  text-align: center;
+  margin: 50px;
+}
+
+/* Media Queries*/
+@media (max-width: 1300px) {
+    div#showgrid {
+      width: 800px;
+      margin: auto;}
+
+    .column {
+      width: 230px;
+      height: 230px;
+      display: inline;
+      float: left;}
+  }
+
+@media (max-width: 800px) {
+    div#showgrid {
+      width: 600px;}
+}
+
+@media (max-width: 400px) {
+    div#showgrid {
+      width: 200px;}
+
+    div.column {
+     border: 100px;}
+}
